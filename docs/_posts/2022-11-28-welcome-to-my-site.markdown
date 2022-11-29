@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "In Progress"
+title:  "Welcome"
 date:   2022-11-28 19:56:08 +0200
 categories: placeholder
 image: "https://media.giphy.com/media/8UNqzs9MnMuL5MKN00/giphy.gif"
