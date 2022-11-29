@@ -47,6 +47,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
+  - jemoji
 
 search_full_content: true
 
