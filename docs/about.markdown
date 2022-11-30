@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+# add links from images, add header image to site
 ---
 
 # Danielle Honigstein
@@ -18,9 +19,11 @@ Lasers are cool.
 
 So _obviously_ I wanted to learn physics. I considered Physics and Music, but in the end I decided on Physics and Computer Science, because I figured programming would be very useful as a physicist. And slowly I became more and more hooked. 
 
-The epiphany came somewhere in the middle of my PhD in Applied Physics. I had been working as a programmer since my MsC, and after spending roughly 3 months aligning the *@#$ system I realised that I actually enjoy programming more. You get a result so __fast__. It might not be the result you want, but at least you get feedback quickly. And you can create almost anything, from a mobile app for research to an abstract video.
+The epiphany came somewhere in the middle of my PhD in Applied Physics. I had been working as a programmer for a few years by then, and after spending roughly 3 months aligning the *@#$ system for my expeirment in physics I realised that I actually enjoy programming more. You get a result so __fast__. It might not be the result you want, but at least you get feedback quickly. And you can create almost anything, from a [mobile app for research](https://play.google.com/store/apps/details?src=AppAgg.com&id=weizmann.worg.sniffdoc) to an [abstract video](https://youtu.be/fUEZRcjXwNU?t=122).
 
 So I started working as a physicist and programmer, and then I programmed for physicists, and now I'm programming for (mostly) neurobiologists at the [Olfaction Lab](https://www.weizmann.ac.il/brain-sciences/worg/) at the Weizmann Institute of Science.
+
+I also play sing and play the piano. I have some songs in [YouTube](https://www.youtube.com/playlist?list=PL7-r1kUHMs_zUdbzpRfdPoJ0yGWucOe8H), most of them with videos at least partially done in Processing.
 
 I'm also in a startup (more details coming after the launch :grinning: ) 
 
@@ -28,7 +31,7 @@ I taught Computer Science at a high school for two years, and I loved teaching. 
 
 I'm married with 3 awesome kids.
 
-I program in Flutter, Android (Java), Swift, Drupal (HTML, JavaScript, css, PHP, yml), LabVIEW, Matlab, Arduino (C), Python, Processing (Java), C (for embedded firmware) and I probably forgot something :wink:.
+I program in Flutter, Android (Java), Swift, Drupal (HTML, JavaScript, css, PHP, yml), LabVIEW, Matlab, Arduino (C), Python, Processing (Java), Unity, C (for embedded firmware) and I probably forgot something :wink:.
 
 In this blog I'll highlight anything that strikes me as interesting. Come join me, we'll have fun.
 

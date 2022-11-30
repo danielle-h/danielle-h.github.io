@@ -31,7 +31,7 @@ github_username:  danielle-h
 gem "github-pages", group: :jekyll_plugins
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
 
-
+logo: "/assets/images/dh-diamond.png"
 skin: "/assets/css/skins/light.css"
 
 read_time: true
