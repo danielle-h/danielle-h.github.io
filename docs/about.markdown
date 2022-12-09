@@ -19,7 +19,7 @@ Lasers are cool.
 
 So _obviously_ I wanted to learn physics. I considered Physics and Music, but in the end I decided on Physics and Computer Science, because I figured programming would be very useful as a physicist. And slowly I became more and more hooked. 
 
-The epiphany came somewhere in the middle of my PhD in Applied Physics. I had been working as a programmer for a few years by then, and after spending roughly 3 months aligning the *@#$ system for my expeirment in physics I realised that I actually enjoy programming more. You get a result so __fast__. It might not be the result you want, but at least you get feedback quickly. And you can create almost anything, from a [mobile app for research](https://play.google.com/store/apps/details?src=AppAgg.com&id=weizmann.worg.sniffdoc) to an [abstract video](https://youtu.be/fUEZRcjXwNU?t=122).
+The epiphany came somewhere in the middle of my PhD in Applied Physics. I had been working as a programmer for a few years by then, and after spending roughly 3 months aligning the *@#$ system for my expeirment in physics I realised that I actually enjoy programming more. You get a result so __fast__. It might not be the result you want, but at least you get feedback quickly. And you can create almost anything, from a [mobile app for research](https://play.google.com/store/apps/details?src=AppAgg.com&id=weizmann.worg.sniffdoc) to an [abstract video](https://youtu.be/0BVqFYParRs?t=173).
 
 So I started working as a physicist and programmer, and then I programmed for physicists, and now I'm programming for (mostly) neurobiologists at the [Olfaction Lab](https://www.weizmann.ac.il/brain-sciences/worg/) at the Weizmann Institute of Science.
 
