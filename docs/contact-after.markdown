@@ -15,4 +15,5 @@ permalink: /contact-after/
 
 
  <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd0PpgbZSB7JiKie9t6kY13LICkZ-rTjfGrnZfJzOcZiV_s4w/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-Thank you for contacting me! I will get back to you as soon as possible
+Thank you for contacting me! I will get back to you as soon as possible. 
+{: .notice--accent}
