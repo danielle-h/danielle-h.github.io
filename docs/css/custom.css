@@ -3,3 +3,13 @@ canvas {
     margin: auto;
     display: block;
 }
+
+.stretch {
+    width: 100%;
+}
+
+.btn-danielle {
+    color: #fff;
+    background-color: #932768;
+    border-color: #932768;
+}
