@@ -1,5 +1,7 @@
 - title: Home
   url: /
+- title: Categories
+  url: /categories/
 - title: Contact
   url: /contact/
 - title: About

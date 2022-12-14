@@ -1,1 +1,4 @@
 pink background? #fcfafc
+comments on pages with disqus
+attribute web3forms in contact us form
+add captcha https://docs.hcaptcha.com/

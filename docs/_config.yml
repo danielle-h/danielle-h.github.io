@@ -54,6 +54,11 @@ plugins:
 
 search_full_content: true
 
+# Taxonomy pages
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
+
+
 # Footer Links
 footer_links:
   - title: Gitlab
