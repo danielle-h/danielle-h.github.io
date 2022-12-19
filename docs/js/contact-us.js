@@ -1,3 +1,5 @@
+$( document ).ready(function() {
+
 const form = document.getElementById('contact-form');
 const result = document.getElementById('form-result');
 
@@ -36,4 +38,5 @@ form.addEventListener('submit', function(e) {
                 result.style.display = "none";
             }, 3000);
         });
+});
 });
