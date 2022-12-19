@@ -1,5 +1,5 @@
 const form = document.getElementById('contact-form');
-const result = document.getElementById('fomr-result');
+const result = document.getElementById('form-result');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
