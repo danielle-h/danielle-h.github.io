@@ -20,23 +20,28 @@ form.addEventListener('submit', function(e) {
         })
         .then(async (response) => {
             let json = await response.json();
+            console.log(json);
             if (response.status == 200) {
                 result.innerHTML = json.message;
-                result.classList.add("notice-success");
+                result.classList.add("notice--success");
             } else {
                 console.log(response);
                 result.innerHTML = json.message;
+                result.classList.add("notice--warning");
+
             }
         })
         .catch(error => {
             console.log(error);
             result.innerHTML = "Something went wrong!";
+            result.classList.add("notice--danger");
+
         })
         .then(function() {
             form.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
+            // setTimeout(() => {
+            //     result.style.display = "none";
+            // }, 3000);
         });
 });
 });
