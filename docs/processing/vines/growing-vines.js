@@ -9,10 +9,22 @@
   var currTime = 0;
   var numVines = 1;
   let maxVines = 15;
+
+  var w = window.innerWidth;
+  var h = window.innerHeight; 
   
   
   function setup(){
-    const canvas = createCanvas(400, 400);
+    let params = getURLParams();
+    if (params.fullscreen != "true"){
+      w = 400;
+      h = 400;
+    }
+    if (params.maxVines){
+      maxVines = params.maxVines;
+    }
+    console.log(params);
+    const canvas = createCanvas(w, h);
     canvas.parent('sketch-holder')
     vines.push(Vine.fromPosAndAngle(random(10, width-10), float(height-30), random(-HALF_PI/3, HALF_PI/3)));
     background(0)
