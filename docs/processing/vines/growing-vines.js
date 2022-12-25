@@ -27,6 +27,7 @@
     const canvas = createCanvas(w, h);
     canvas.parent('sketch-holder')
     vines.push(Vine.fromPosAndAngle(random(10, width-10), float(height-30), random(-HALF_PI/3, HALF_PI/3)));
+    textFont("cursive");
     background(0)
   }
   
@@ -77,5 +78,11 @@
     leaves.forEach(function (leaf) {
       leaf.draw()
     })
+
+    fill(255,255,255);//TODO move to function
+    noStroke();
+    text(String.fromCharCode(0x00A9) + " Danielle Honigstein", width-130, height-5);
+
+
   
   }
