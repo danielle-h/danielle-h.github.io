@@ -13,3 +13,7 @@ canvas {
     background-color: #932768;
     border-color: #932768;
 }
+
+.entry p:last-child::after {
+    content: '...';
+}

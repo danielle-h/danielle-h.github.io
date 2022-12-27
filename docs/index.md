@@ -14,7 +14,7 @@ show_excerpts: true
 <script type="text/javascript" src="/processing/vines/growing-vines.js"></script></div>
 
 _This is a p5.js sketch that draws growing vines. Hypnotizing, isn't it? The original Processing code is [here](https://gitlab.com/dsavir/growing-vines). The p5.js code is in the [site repository](https://github.com/danielle-h/danielle-h.github.io/tree/main/docs/processing/vines). I converted part of it manually, and part of it using this excellent
-[converter](https://dkessner.github.io/processing-p5-convert/). For embedding it into e.g. web-screensaver, click [here](/embed-vines/?fullscreen=true&maxVines=20)._
+[converter](https://dkessner.github.io/processing-p5-convert/). For [embedding](/utilities/2022/12/27/embed-iframe.html) it into e.g. web-screensaver, use [this link](/embed/vines/?fullscreen=true&maxVines=20)._
 
 ## Welcome!
 
