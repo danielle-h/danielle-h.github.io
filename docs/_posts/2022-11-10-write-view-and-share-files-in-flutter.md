@@ -3,7 +3,7 @@ layout: post
 title:  "Write, view and share files in Flutter"
 date:   2022-11-10 19:56:08 +0200
 categories: flutter
-tags: file,share
+tags: [file,share]
 ---
 
 

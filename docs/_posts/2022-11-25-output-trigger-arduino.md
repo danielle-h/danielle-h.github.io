@@ -2,7 +2,7 @@
 layout: post
 title:  "Arduino hardware triggers"
 categories: arduino
-tags: trigger,hardware,cross-platform,python
+tags: [trigger,hardware,cross-platform,python]
 ---
 
 ![Example system with Arduino triggers](/assets/images/arduino-triggers/medium-arduino-trigger.drawio.png "Example system with Arduino triggers"){: .align-center}

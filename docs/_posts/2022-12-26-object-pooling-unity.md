@@ -2,7 +2,7 @@
 layout: post
 title:  "Object Pooling in Unity"
 categories: unity
-tags: object-pooling,optimization
+tags: [object-pooling,optimization]
 ---
 ![](https://miro.medium.com/max/720/1*TFiE8b2Ghx8XspdS9zAduA.gif)
 
