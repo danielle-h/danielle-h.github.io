@@ -35,8 +35,6 @@ markdown: kramdown
 
 excerpt_separator: <!--more-->
 
-
-
 logo: "/assets/images/dh-diamond.png"
 skin: "/assets/css/skins/light.css"
 
@@ -47,6 +45,11 @@ paginate: 10
 paginate_path: /page:num/
 
 date_format: "%Y-%m-%d"
+
+collections:
+  sketches:
+    output: true
+    permalink: /:collection/:name/
 
 
 plugins:

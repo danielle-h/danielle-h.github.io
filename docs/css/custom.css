@@ -17,3 +17,7 @@ canvas {
 .entry p:last-child::after {
     content: '...';
 }
+
+.sketch-subtitle  {
+    font-size:larger;
+}

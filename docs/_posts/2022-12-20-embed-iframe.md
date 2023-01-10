@@ -7,7 +7,7 @@ tags: [embed, html]
 
 
 
-The growing vines p5.js sketch below should be familiar to you, as it's on my home page :). Here I explain how to use an iFrame to embed it on any page. You can embed the same sketch or any of my other sketches in the same way<!--more-->, like this:
+The growing vines p5.js sketch below should be familiar to you, as it's on my home page :). Here I explain how to use an iFrame to embed it on any page. You can embed the same sketch or any of [my other sketches](/sketches) in the same way<!--more-->, like this:
 
 ```html
 <iframe src="/embed/vines/?fullscreen=true&maxVines=15" width="100%" height="400" style="border:1px solid black;">
