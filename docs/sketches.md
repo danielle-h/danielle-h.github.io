@@ -15,13 +15,9 @@ Here are all my sketches, with their URL parameters. You can embed them in an [i
         <a href="{{ entry.url | relative_url }}?fullscreen=true" rel="bookmark">{{ entry.title }}</a>
     </h2>
   </header>
-  {% unless page.show_excerpts == false %}
     <div class="entry-excerpt p-summary">
-      {% if entry.excerpt %}
-        {{ entry.excerpt | markdownify }}
-      {% endif %}
+     <iframe scrolling="no" src="{{entry.url}}" width="401" height="401" style="border:1px solid black;"></iframe>
     </div>
-  {% endunless %}
     <footer class="entry-meta">
         <div class="sketch-subtitle">URL parameters: </div>
         {% for parameter in entry.parameters %}
