@@ -1,12 +1,18 @@
-var w = window.innerWidth;
-var h = window.innerHeight;
+/**
+ * Main script for showing simulating diffusion using random walk. optionally creates input fields.
+ *
+ * Copyright 2022 Danielle Honigstein. Free for commercial and personal use with attribution.
+ */
 
+//diffusing drops array
 let dd;
+//number of drops
 let numDrops = 100;
-
+//diffusion speed
 let diffusionSpeed = 5;
+//colors
 let c1, c2;
-let isFullScreen = true;
+
 //input fields
 let speedSlider;
 let restartButton;
@@ -16,12 +22,19 @@ let colorPicker1;
 let colorPicker2;
 let randomCheckbox;
 
+//fullscreen
+let isFullScreen = true;
+//width and height for fullscreen option
+var w = window.innerWidth;
+var h = window.innerHeight;
+
 //timing
 let runTime = 30000; //ms
 let startTime = 0;
 let currTime = 0;
 
 function setup() {
+  //get parameters from url if any
   let params = getURLParams();
   if (params.fullscreen != "true") {
     w = 400;
@@ -37,21 +50,14 @@ function setup() {
   if (params.runTime) {
     runTime = params.runTime;
   }
+  //create canvas and connect to html page
   const canvas = createCanvas(w, h);
   canvas.parent("sketch-diffusion");
-  console.log("isFullScreen " + isFullScreen);
+  //start with random color that we can put in colorpicker
   c1 = getRandomColor();
   c2 = getRandomColor();
-
+  //not fullscreen - need to add the input fields
   if (!isFullScreen) {
-    //add custom css
-    // var link = document.createElement( "link" );
-    // link.href = "/processing/diffusion/diffusion.css";
-    // link.type = "text/css";
-    // link.rel = "stylesheet";
-    // link.media = "screen,print";
-    // document.getElementsByTagName( "head" )[0].appendChild( link );
-
     //create slider for diffusionSpeed
     let sliderDiv = createDiv(); //containing div
     sliderDiv.id("slider-div");
@@ -100,26 +106,18 @@ function setup() {
     restartButton.parent("sketch-diffusion");
     restartButton.class("reset-button btn btn--inverse");
   }
-  //stroke(204, 51, 153, 30); //color c1 = color(204,51,153,10);
+  //set colormode. HSL - for easy bright random colors, alpha 255 for ease of use with the colorpickers
   colorMode(HSL, 360, 100, 100, 255);
-  //color c2 = color(51,51,200,10);
   restartSketch();
 }
 
-function getRandomColor() {
-  //return color(random(125, 255), random(125, 255), random(125, 255), 10);
-  return color(random(0, 360), 80, 50);
-}
-
-function updateSpeedValue() {
-  speedValue.html(speedSlider.value());
-}
-
 function draw() {
+  //step and draw the drops
   for (let i = 0; i < numDrops; i++) {
     dd[i].step();
     dd[i].display();
   }
+  //if in fullscreen mode, check if need to restart the sketch
   if (isFullScreen) {
     currTime = millis();
     if (currTime - startTime > runTime) {
@@ -127,7 +125,8 @@ function draw() {
       restartSketch();
     }
   }
-  fill(0, 0, 100); 
+  //my copyright
+  fill(0, 0, 100);
   noStroke();
   text(
     String.fromCharCode(0x00a9) + " Danielle Honigstein",
@@ -136,6 +135,16 @@ function draw() {
   );
 }
 
+//get random bright color
+function getRandomColor() {
+  return color(random(0, 360), 80, 50);
+}
+
+//update slider value indicator on slider change
+function updateSpeedValue() {
+  speedValue.html(speedSlider.value());
+}
+//convert color to hex string
 function colorToHexString(c) {
   return (
     "#" +
@@ -144,43 +153,44 @@ function colorToHexString(c) {
     hex(round(blue(c)), 2)
   );
 }
+//restart the sketch
 function restartSketch() {
   background(0);
   let useRandom = true;
   if (!isFullScreen) {
+    //get values from input if exist
     diffusionSpeed = speedSlider.value();
     numDrops = Number(numInput.value());
     useRandom = randomCheckbox.checked();
   }
-
   c1 = useRandom ? getRandomColor() : colorPicker1.color();
   c2 = useRandom ? getRandomColor() : colorPicker2.color();
-  //   if (c1.mode == 'hsl'){
-  //   c1.setAlpha(10/255);
-  //   c2.setAlpha(10/255);
-  //   }
-  //else {
+  //set alpha, if alpha too high looses all the effect
   c1.setAlpha(10);
   c2.setAlpha(10);
-  //}
+  //update colorpicker values if random
   if (!isFullScreen && useRandom) {
     colorPicker1.value(colorToHexString(c1));
     colorPicker2.value(colorToHexString(c2));
   }
+  //create diffusing drop array
   dd = new Array(numDrops);
   for (let i = 0; i < numDrops; i++) {
+    //set the color
     let c;
     if (random(2) < 1) {
       c = c1;
     } else {
       c = c2;
     }
+    //create each drop
     dd[i] = new DiffusingDrop(
       50,
       new Point(random(width), random(height)),
       c,
       diffusionSpeed
     );
+    //draw the drops
     dd[i].display();
   }
 }

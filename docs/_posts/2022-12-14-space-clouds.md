@@ -8,7 +8,7 @@ tags: [diffusion, input, interactive,random-walk]
 <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
 <script type="text/javascript" src="/processing/diffusion/diffusingDrop.js"></script>
 <script type="text/javascript" src="/processing/diffusion/point.js"></script>
-My original plan was to create a simulation of ink spreading in water (spoiler: I didn't succeed). I figured that I was looking at diffusion, so I used the following [model](https://www.compadre.org/nexusph/course/Diffusion_and_random_walks): start with 100 points at one position (a Diffusing Drop). Each of these points now execute a [random walk](https://en.wikipedia.org/wiki/Random_walk). What would it look like?
+My original plan was to create a simulation of ink spreading in water (spoiler: I didn't succeed). I figured that I was looking at diffusion, so I used the following [model](https://www.compadre.org/nexusph/course/Diffusion_and_random_walks): start with 50 points at one position (a Diffusing Drop). Each of these points now execute a [random walk](https://en.wikipedia.org/wiki/Random_walk). What would it look like?
 You can see the results below and play with the parameters. <!--more-->
 
 When the `diffusion speed` (the size of the step each particle takes) is small, the result looks like diffusion of ink on paper (not water, unfortunately). When the speed is around 5, after a few seconds you get something similar to space clouds. When it is 10, you get colorful dust clouds. For the ink spreading in water effect I need to also simulate micro-currents etc. haven't gotten there yet :)
