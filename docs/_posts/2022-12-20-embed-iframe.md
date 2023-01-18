@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to embed content with an iFrame"
-categories: utilities
+categories: [utilities,p5js]
 tags: [embed, html]
 ---
 

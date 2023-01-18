@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Space clouds"
-categories: [processing,p5js]
+categories: [p5js]
 tags: [diffusion, input, interactive,random-walk]
 ---
 

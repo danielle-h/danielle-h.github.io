@@ -2,8 +2,12 @@
 layout: embed-page
 #permalink: /sketches/vines/?fullscreen=true
 parameters:
-   - name: maxVines
-     description: "the maximum number of vines before restart"
+   - name: diffusionSpeed
+     description: "the speed of the diffusion. Low looks like ink on paper. High looks like dust clouds."
+   - name: runTime
+     description: "the number of milliseconds the sketch runs before restarting"
+   - name: numDrops
+     description: "the number of diffusing drops"
    - name: fullscreen
      description: "if true fills the screen, otherwise 400 by 400"
 ---
