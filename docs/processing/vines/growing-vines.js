@@ -1,4 +1,8 @@
-
+/**
+ * Main script for showing growing vines with flowers and leaves.
+ * 
+ * Copyright 2022 Danielle Honigstein. Free for commercial and personal use with attribution.
+ */
 
   
   var vines = new Array();
@@ -78,7 +82,7 @@
     leaves.forEach(function (leaf) {
       leaf.draw()
     })
-
+    //my copyright
     fill(255,255,255);//TODO move to function
     noStroke();
     text(String.fromCharCode(0x00A9) + " Danielle Honigstein", width-130, height-5);

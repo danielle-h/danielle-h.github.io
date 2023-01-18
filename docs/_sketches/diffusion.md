@@ -8,6 +8,7 @@ parameters:
      description: "if true fills the screen, otherwise 400 by 400"
 ---
 
+
 <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
 <script type="text/javascript" src="/processing/diffusion/diffusingDrop.js"></script>
 <script type="text/javascript" src="/processing/diffusion/point.js"></script>

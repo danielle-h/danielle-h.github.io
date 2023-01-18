@@ -2,10 +2,10 @@ var w = window.innerWidth;
 var h = window.innerHeight;
 
 let dd;
-let numDrops = 100; 
+let numDrops = 100;
 
 let diffusionSpeed = 5;
-let c1,c2;
+let c1, c2;
 let isFullScreen = true;
 //input fields
 let speedSlider;
@@ -74,7 +74,7 @@ function setup() {
     maxLabel.parent("slider-div");
 
     //number of drops
-    let numDropDiv = createDiv().id('numdrop-div'); //containing div
+    let numDropDiv = createDiv().id("numdrop-div"); //containing div
     numDropDiv.parent("sketch-diffusion");
     let numDropLabel = createSpan("Number of drops: "); //label
     numDropLabel.parent("numdrop-div");
@@ -82,17 +82,16 @@ function setup() {
     numInput.parent("numdrop-div");
 
     //color
-    let colorDiv = createDiv().id('color-div'); //containing div
+    let colorDiv = createDiv().id("color-div"); //containing div
     colorDiv.parent("sketch-diffusion");
     let colrLabel = createSpan("Colors: "); //label
-    colrLabel.parent('color-div');
+    colrLabel.parent("color-div");
     colorPicker1 = createColorPicker(c1);
-    colorPicker1.parent('color-div');
+    colorPicker1.parent("color-div");
     colorPicker2 = createColorPicker(c2);
-    colorPicker2.parent('color-div');
+    colorPicker2.parent("color-div");
     randomCheckbox = createCheckbox("Use random", true);
-    randomCheckbox.parent('color-div');
-
+    randomCheckbox.parent("color-div");
 
     //reset button
     restartButton = createButton("Reset");
@@ -102,14 +101,14 @@ function setup() {
     restartButton.class("reset-button btn btn--inverse");
   }
   //stroke(204, 51, 153, 30); //color c1 = color(204,51,153,10);
-  colorMode(HSL);
+  colorMode(HSL, 360, 100, 100, 255);
   //color c2 = color(51,51,200,10);
   restartSketch();
 }
 
-function getRandomColor(){
-    //return color(random(125, 255), random(125, 255), random(125, 255), 10);
-    return color(random(0,360),80,50);
+function getRandomColor() {
+  //return color(random(125, 255), random(125, 255), random(125, 255), 10);
+  return color(random(0, 360), 80, 50);
 }
 
 function updateSpeedValue() {
@@ -128,30 +127,46 @@ function draw() {
       restartSketch();
     }
   }
+  fill(0, 0, 100); 
+  noStroke();
+  text(
+    String.fromCharCode(0x00a9) + " Danielle Honigstein",
+    width - 130,
+    height - 5
+  );
 }
 
-function colorToHexString(c)
-{
-    return "#" + hex(round(red(c)),2) + hex(round(green(c)),2) + hex(round(blue(c)),2);
+function colorToHexString(c) {
+  return (
+    "#" +
+    hex(round(red(c)), 2) +
+    hex(round(green(c)), 2) +
+    hex(round(blue(c)), 2)
+  );
 }
 function restartSketch() {
   background(0);
   let useRandom = true;
-  if (!isFullScreen){
-  diffusionSpeed = speedSlider.value();
-  numDrops = Number(numInput.value());
-  useRandom = randomCheckbox.checked();
+  if (!isFullScreen) {
+    diffusionSpeed = speedSlider.value();
+    numDrops = Number(numInput.value());
+    useRandom = randomCheckbox.checked();
   }
-  
+
   c1 = useRandom ? getRandomColor() : colorPicker1.color();
   c2 = useRandom ? getRandomColor() : colorPicker2.color();
-  c1.setAlpha(10/255);
-  c2.setAlpha(10/255);
-  console.log(c1 + " " + "#" + hex(red(c1),2) + hex(green(c1),2) + hex(blue(c1),2));
-  if (!isFullScreen && useRandom){
+  //   if (c1.mode == 'hsl'){
+  //   c1.setAlpha(10/255);
+  //   c2.setAlpha(10/255);
+  //   }
+  //else {
+  c1.setAlpha(10);
+  c2.setAlpha(10);
+  //}
+  if (!isFullScreen && useRandom) {
     colorPicker1.value(colorToHexString(c1));
     colorPicker2.value(colorToHexString(c2));
-    }
+  }
   dd = new Array(numDrops);
   for (let i = 0; i < numDrops; i++) {
     let c;

@@ -24,7 +24,7 @@ The epiphany came somewhere in the middle of my PhD in Applied Physics. I had be
 
 So I started working as a physicist and programmer, and then I programmed for physicists, and now I'm programming for (mostly) neurobiologists at the [Olfaction Lab](https://www.weizmann.ac.il/brain-sciences/worg/) at the Weizmann Institute of Science.
 
-I also play sing and play the piano. I have some songs in [YouTube](https://www.youtube.com/playlist?list=PL7-r1kUHMs_zUdbzpRfdPoJ0yGWucOe8H), most of them with videos at least partially done in Processing.
+I also play sing and play the piano. I have some songs in [YouTube](https://www.youtube.com/playlist?list=PL7-r1kUHMs_zUdbzpRfdPoJ0yGWucOe8H), most of them with videos at least partially done in Processing. The site also has p5.js sketches, all my sketches are free for commercial and personal use with attribution ([BSD 3-clause license](https://opensource.org/licenses/BSD-3-Clause)).
 
 I'm also in a startup (more details coming after the launch :grinning: ) 
 
