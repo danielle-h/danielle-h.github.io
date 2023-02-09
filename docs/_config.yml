@@ -51,6 +51,8 @@ collections:
     output: true
     permalink: /:collection/:name/
 
+disqus:
+  shortname: www-danielle-honig-com
 
 plugins:
   - jekyll-seo-tag

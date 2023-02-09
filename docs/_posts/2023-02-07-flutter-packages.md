@@ -3,6 +3,7 @@ layout: post
 title:  "Flutter packages"
 categories: flutter
 tags: [package, reuse]
+comments: true
 ---
 
 Many of my apps communicate with a custom Bluetooth device. Also, many of my apps should have the same, or at least similar, branding. Therefore, many of my apps have common code.
