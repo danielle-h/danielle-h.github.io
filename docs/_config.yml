@@ -23,7 +23,7 @@ email: use-contact-page@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Programmer, PhD in Applied Physics. Here are cool things I did with code.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://danielle-honig.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://danielle-h.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  danielle-h
 
