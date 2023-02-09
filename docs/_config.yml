@@ -52,7 +52,7 @@ collections:
     permalink: /:collection/:name/
 
 disqus:
-  shortname: www-danielle-honig-com
+  shortname: danielle-honig
 
 plugins:
   - jekyll-seo-tag
