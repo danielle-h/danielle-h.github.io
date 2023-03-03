@@ -1,4 +1,8 @@
 let spheres = [];
+let randomTime = false;
+let burstTime = 0;
+let lastBurstTime = 0;
+let currBurstTime = 0;
 
 //fullscreen
 let isFullScreen = true;
@@ -14,6 +18,10 @@ function setup() {
     h = 400;
     isFullScreen = false;
   }
+  else{
+    randomTime = true;
+    burstTime = random(200,1000);
+  }
 
   //create canvas and connect to html page
   const canvas = createCanvas(w, h, WEBGL);
@@ -24,14 +32,8 @@ function setup() {
   noStroke();
   colorMode(HSB, 360, 100, 100);
   //create a burst at the beginning
-  spheres.push(
-    new BurstingSpheres(
-      5,
-      color(random(0, 360), random(20, 85), random(50, 70)),
-      new p5.Vector(0, 0),
-      -1
-    )
-  );
+  pushSpheres(0,0);
+  
 }
 /**
  * Draw the bursting spheres
@@ -47,19 +49,35 @@ function draw() {
       spheres.splice(i, 1);
     }
   }
+
+  if (randomTime){
+    currBurstTime = millis();
+    if (currBurstTime - lastBurstTime > burstTime){
+      pushSpheres(random(-width/2,width/2),random(-height/2,height/2));
+      burstTime = random(200,1000);
+      lastBurstTime = currBurstTime;
+    }
+  }
 }
 /**
  * create new on mouse click
  */
 function mouseClicked() {
-  let center = new p5.Vector(mouseX - width / 2, 0, mouseY);
+  pushSpheres(mouseX - width / 2, mouseY - height / 2);
+  
+}
+
+/**
+ * create new burstingSpheres at point x,y
+ */
+function pushSpheres(x,y){
   spheres.push(
     new BurstingSpheres(
       5,
       color(random(0, 360), random(20, 60), random(30, 60)),
-      new p5.Vector(mouseX - width / 2, mouseY - height / 2),
+      new p5.Vector(x, y),
       -1
     )
   );
-}
 
+}
