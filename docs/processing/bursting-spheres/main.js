@@ -4,6 +4,11 @@ let burstTime = 0;
 let lastBurstTime = 0;
 let currBurstTime = 0;
 
+
+//text
+let pg;
+let margin = 4;
+
 //fullscreen
 let isFullScreen = true;
 //width and height for fullscreen option
@@ -22,9 +27,16 @@ function setup() {
     randomTime = true;
     burstTime = random(200,1000);
   }
+  copyrightX = w-220;
+  copyrightY = h -70;
+  console.log("width: " + w +" height: " + h + " cX: " + copyrightX + " cY: " + copyrightY)
 
   //create canvas and connect to html page
   const canvas = createCanvas(w, h, WEBGL);
+  pg = createGraphics(w-margin,h-margin);
+  pg.fill(0)
+  //stroke(0)
+  pg.text(String.fromCharCode(0x00a9) + " Danielle Honigstein", w- margin - 130, h-margin - 10);
   canvas.parent("sketch-spheres");
 
   //drawing variables
@@ -50,6 +62,7 @@ function draw() {
     }
   }
 
+  //random bursts
   if (randomTime){
     currBurstTime = millis();
     if (currBurstTime - lastBurstTime > burstTime){
@@ -58,6 +71,14 @@ function draw() {
       lastBurstTime = currBurstTime;
     }
   }
+
+  //my copyright
+  //pass graphics as texture
+  pg.fill(0);
+  texture(pg);
+  plane(w-margin,h-margin);
+
+  console.log(spheres.length)
 }
 /**
  * create new on mouse click

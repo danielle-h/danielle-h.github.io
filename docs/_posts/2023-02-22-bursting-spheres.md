@@ -18,4 +18,6 @@ Click on the blue sky and watch the spheres burst!  <!--more-->
 
  For the p5js code, I had to remove all the music and video processing code, convert the code, and basically rewrite practically everything as the 3D system and lighting is not exactly the same. It's not very different, but it still required some tweaking.
 
+ A full screen random version is available [here](https://danielle-honig.com//sketches/bursting-spheres/?fullscreen=true)
+
  Enjoy!
