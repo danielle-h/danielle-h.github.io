@@ -1,0 +1,16 @@
+ <div>
+        <p>
+        This is a beta version of the first 5 levels in Space Short. Use arrow keys to move the space ship and space bar to shoot. Can you make it?
+        </p>
+        <p>
+        List of features to add:
+        </p>
+        <ol>
+          <li>Settings menu</li>
+          <li>Animation of start screen</li>
+          <li>Boss will shoot meteors</li>
+        </ol>
+  
+        <p>Did you enjoy playing? Was it too hard/too easy? What would you like to add? Please let me know in the comments!</p>
+  
+      </div>
