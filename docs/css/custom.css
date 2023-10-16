@@ -1,23 +1,27 @@
 canvas {
-    padding: 0;
-    margin: auto;
-    display: block;
+  padding: 0;
+  margin: auto;
+  display: block;
 }
 
 .stretch {
-    width: 100%;
+  width: 100%;
 }
 
 .btn-danielle {
-    color: #fff;
-    background-color: #932768;
-    border-color: #932768;
+  color: #fff;
+  background-color: #932768;
+  border-color: #932768;
 }
 
 .entry p:last-child::after {
-    content: '...';
+  content: "...";
 }
 
-.sketch-subtitle  {
-    font-size:larger;
+.sketch-subtitle {
+  font-size: larger;
+}
+
+.entry {
+  padding-top: 2rem;
 }
