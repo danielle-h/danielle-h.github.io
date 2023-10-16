@@ -26,7 +26,7 @@ So I started working as a physicist and programmer, and then I programmed for ph
 
 I also play sing and play the piano. I have some songs in [YouTube](https://www.youtube.com/playlist?list=PL7-r1kUHMs_zUdbzpRfdPoJ0yGWucOe8H), most of them with videos at least partially done in Processing. The site also has p5.js sketches, all my sketches are free for commercial and personal use with attribution ([BSD 3-clause license](https://opensource.org/licenses/BSD-3-Clause)).
 
-I'm also in a startup (more details coming after the launch :grinning: ) 
+I'm also a (mostly) mobile programmer at [Sniff Logic](https://www.snifflogic.com/), where we turn nasal airflow into communication and information.
 
 I taught Computer Science at a high school for two years, and I loved teaching. When I'll have the time for it I will probably go back to it.
 
