@@ -32,6 +32,7 @@ I used the following free assets:
 - Enemy explosion from [FreeSound](https://freesound.org/s/521105/)
 - Cheering sound from [FreeSound](https://freesound.org/people/scratchers/sounds/505717/)
 - Player death from [FreeSound](https://freesound.org/people/Jofae/sounds/364929/)
+- High score from [FreeSound](https://freesound.org/people/deleted_user_13668154/sounds/616485/)
 
 ## About me
 
