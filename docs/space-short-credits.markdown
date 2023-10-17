@@ -31,6 +31,7 @@ I used the following free assets:
 - Laser sounds from [FreeSound](https://freesound.org/s/512469/)
 - Enemy explosion from [FreeSound](https://freesound.org/s/521105/)
 - Cheering sound from [FreeSound](https://freesound.org/people/scratchers/sounds/505717/)
+- Player death from [FreeSound](https://freesound.org/people/Jofae/sounds/364929/)
 
 ## About me
 
