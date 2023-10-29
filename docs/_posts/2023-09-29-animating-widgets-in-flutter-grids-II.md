@@ -12,6 +12,6 @@ In the [first article](https://medium.com/@dsavir-h/animating-widgets-in-flutter
 
 In this article, we will explore the AnimatedPositioned widget:
 
-<iframe width="680" height="382" src="https://www.youtube.com/embed/hC3s2YdtWt8" title="AnimatedPositioned (Flutter Widget of the Week)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" src="https://www.youtube.com/embed/hC3s2YdtWt8" title="AnimatedPositioned (Flutter Widget of the Week)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Read more [here](https://medium.com/@dsavir-h/animating-widgets-in-flutter-grids-d401409f1971).
