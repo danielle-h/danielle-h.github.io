@@ -10,6 +10,6 @@ Sometimes, you need to transition between two different kinds of grids in your a
 
 In this article, we will explore the Hero widget:
 
-<iframe width="100%" src="https://www.youtube.com/embed/Be9UH1kXFDw" title="Hero (Flutter Widget of the Week)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="95%" src="https://www.youtube.com/embed/Be9UH1kXFDw" title="Hero (Flutter Widget of the Week)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Read more [here](https://medium.com/@dsavir-h/animating-widgets-in-flutter-grids-69fecd17ad68).
