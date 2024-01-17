@@ -33,12 +33,13 @@ span.bmc-btn-text {
   flex-shrink: unset !important;
 }
 
-.convert-input{
-  margin:0 10px 0 0 ;
+.convert-input {
+  margin: 0 10px 0 0;
 }
 
 .entry p:last-child::after {
-  content: "...";
+  content: " <Read more>";
+  color: blue;
 }
 
 .sketch-subtitle {
