@@ -15,6 +15,8 @@ As Medium does not yet support my country in the Partner program, I don’t lose
 
 So here is how to copy the article into Markdown in VSCode, using some handy shortcuts.
 
+<!--more-->
+
 > Tip: best to copy the article when writing it to Medium, not too much later.
 
 #### Step 1: Basic Medium to Markdown
@@ -36,6 +38,7 @@ This isn’t what you want in your site — your images are yours, and you h
 Drag and drop your image into your Markdown document. Hold `Shift` to drop it into the document instead of opening the file.
 
 ![gif of dragging an image to the vscode editor](/assets/images/2024-01-17-medium-to-markdown/shift-drop-vscode.gif){: .align-center}
+
 <h6 style="text-align: center;">
 Don’t forget `Shift`</h6>
 
@@ -58,13 +61,13 @@ Doing that for all captions gets old very quickly, and this is where VSCode magi
 3.  In between the square brackets, insert the following code:
 
 ```json
-{  
- "key": "alt+p",  
- "command": "editor.action.insertSnippet",  
- "when": "editorTextFocus",  
- "args": {  
- "snippet": "<h6 style=\"text-align: center;\">${TM_SELECTED_TEXT}</h6>"  
-        }  
+{
+  "key": "alt+p",
+  "command": "editor.action.insertSnippet",
+  "when": "editorTextFocus",
+  "args": {
+    "snippet": "<h6 style=\"text-align: center;\">${TM_SELECTED_TEXT}</h6>"
+  }
 }
 ```
 
@@ -72,6 +75,7 @@ What did we do here?
 
 We defined a shortcut key (`alt + p`) that inserts a snippet when editing. The snippet wraps the `SELECTED_TEXT` with `<h6 style=\”text-align: center;\”>` before the selected text, and `</h6>` after. Exactly what we wanted, by pressing two keys!
 ![demo of using alt+p keybinding](/assets/images/2024-01-17-medium-to-markdown/alt-p-vscode.gif){: .align-center}
+
 <h6 style="text-align: center;">See? Like that.
 </h6>
 
@@ -86,16 +90,16 @@ The same problem arises with code. StackEdit doesn’t wrap it in code blocks. W
 
 Wait, we did something similar, didn’t we…?
 
-```json
+````json
 {
-    "key": "alt+d",
-    "command": "editor.action.insertSnippet",
-    "when": "editorTextFocus",
-    "args": {
-      "snippet": "```dart\n${TM_SELECTED_TEXT}\n```"
-    }
+  "key": "alt+d",
+  "command": "editor.action.insertSnippet",
+  "when": "editorTextFocus",
+  "args": {
+    "snippet": "```dart\n${TM_SELECTED_TEXT}\n```"
   }
-```
+}
+````
 
 Note the usage of `\n` for a new line within the snippet.
 
@@ -110,13 +114,13 @@ Medium has that nice text separator:
 I created [my own text separator](https://pixabay.com/illustrations/text-separator-vines-flower-green-8492536/) from my [vines sketch](https://danielle-honig.com/sketches/vines/?fullscreen=true), and I created a VSCode snippet to add this as well:
 
 ```json
-{  
- "key": "alt+v",  
- "command": "editor.action.insertSnippet",  
- "when": "editorTextFocus",  
- "args": {  
- "snippet": "![vines-separator](/assets/images/vines-separator-smaller.png){: .align-center}"  
-  }  
+{
+ "key": "alt+v",
+ "command": "editor.action.insertSnippet",
+ "when": "editorTextFocus",
+ "args": {
+ "snippet": "![vines-separator](/assets/images/vines-separator-smaller.png){: .align-center}"
+  }
 },
 ```
 
@@ -129,13 +133,13 @@ You can see the separator at the bottom of this post.
 If you have narrow images, you will notice that the images aren’t centered by default. So I created a snippet that only adds the liquid centering command, to add to my images:
 
 ```json
-{  
- "key": "alt+c",  
- "command": "editor.action.insertSnippet",  
- "when": "editorTextFocus",  
- "args": {  
- "snippet": "{: .align-center}"  
-    }  
+{
+ "key": "alt+c",
+ "command": "editor.action.insertSnippet",
+ "when": "editorTextFocus",
+ "args": {
+ "snippet": "{: .align-center}"
+    }
 },
 ```
 
@@ -144,13 +148,13 @@ If you have narrow images, you will notice that the images aren’t centered by 
 In Jekyll, the first paragraph of each post is automatically taken as an extract on the home page. You can play with that using some HTML comment, typically `<! — more -->`. So I created another snippet for that:
 
 ```json
-{  
- "key": "alt+m",  
- "command": "editor.action.insertSnippet",  
- "when": "editorTextFocus",  
- "args": {  
- "snippet": "<!--more-->"  
-    }  
+{
+ "key": "alt+m",
+ "command": "editor.action.insertSnippet",
+ "when": "editorTextFocus",
+ "args": {
+ "snippet": "<!--more-->"
+    }
 },
 ```
 
