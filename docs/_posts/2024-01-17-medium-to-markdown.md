@@ -164,6 +164,6 @@ What tricks do you use? Do you already use keybindings? Let me know in the comme
 
 ![vines-separator](/assets/images/vines-separator-smaller.png){: .align-center}
 
-[_105 unimaginable days_](https://www.facebook.com/bringhomenow/)_._ [_#BringThemHomeNow_](https://twitter.com/bringhomenow)_._
+[_104 unimaginable days_](https://www.facebook.com/bringhomenow/)_._ [_#BringThemHomeNow_](https://twitter.com/bringhomenow)_._
 
 _Check out my free and open source online game_ [_Space Short_](https://danielle-honig.com/space-short)_. If you like my_ [_site_](https://danielle-honig.com/)_, you can also_ [_buy me a coffee_](https://www.buymeacoffee.com/369wkrttu6)_._
