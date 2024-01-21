@@ -39,7 +39,7 @@ span.bmc-btn-text {
 
 .entry p:last-child::after {
   content: " <Read more>";
-  color: blue;
+  color: #6f0ae2;
 }
 
 .sketch-subtitle {
