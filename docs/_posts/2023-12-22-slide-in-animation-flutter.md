@@ -328,7 +328,7 @@ Note that the `AnimatedTile` doesn’t wrap the `Expanded` widget — it makes f
 ![all-together](/assets/images/slide-in-animation-flutter/all-together-trim.gif){: .align-center}
 
 <h6 style="text-align: center;">Not…exactly what I was looking for.</h6>
-<iframe src="https://giphy.com/embed/NBgQWvxGfpKs30pGB2" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/paramountnetwork-caroline-harris-NBgQWvxGfpKs30pGB2">via GIPHY</a></p>
+{% include responsive-embed url="https://giphy.com/embed/NBgQWvxGfpKs30pGB2" ratio="16:9" %}
 
 The secret is in the slide. We want the top widget to slide less than the next widget, who will slide less than the next, and so on.
 

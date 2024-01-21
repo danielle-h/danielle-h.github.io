@@ -14,6 +14,6 @@ In the [second article](https://medium.com/@dsavir-h/animating-widgets-in-flutte
 
 In this article, we will explore the Flow widget:
 
-<iframe width="95%" src="https://www.youtube.com/embed/NG6pvXpnIso" title="Flow (Flutter Widget of the Week)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% include responsive-embed url="https://www.youtube.com/embed/NG6pvXpnIso" ratio="16:9" %}
 
 Read more [here](https://medium.com/@dsavir-h/animating-widgets-in-flutter-grids-2a7385015bf8).

@@ -14,7 +14,7 @@ Finally, Space short is out. Play it online [here](https://danielle-honig.com/sp
 
 I created a trailer using [kdenlive](https://kdenlive.org/en/):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Iobc0-rxRZA?si=hzGJZl-VZjWjGT85" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% include responsive-embed url="https://www.youtube.com/embed/Iobc0-rxRZA?si=hzGJZl-VZjWjGT85" ratio="16:9" %}
 
 Kdenlive is an awesome free and open source video editor that is capable of so much more than I asked of it.
 

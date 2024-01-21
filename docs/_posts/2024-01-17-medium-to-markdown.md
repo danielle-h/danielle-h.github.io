@@ -11,7 +11,7 @@ I have [my own website](https://danielle-honig.com/) (this site!), using GitHub 
 
 As Medium does not yet support my country in the Partner program, I don’t lose money by posting the same article on my site. But copying manually is tedious and boring.
 
-<iframe src="https://giphy.com/embed/RKS1pHGiUUZ2g" width="480"  height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>{: .align-center}
+{% include responsive-embed url="https://giphy.com/embed/RKS1pHGiUUZ2g" ratio="16:9" %}
 
 So here is how to copy the article into Markdown in VSCode, using some handy shortcuts.
 
@@ -23,7 +23,7 @@ So here is how to copy the article into Markdown in VSCode, using some handy sho
 
 [Mala Deep](https://medium.com/u/9ad123d64d79) wrote an [excellent article](https://medium.datadriveninvestor.com/in-just-under-1-minute-convert-medium-posts-to-markdown-for-your-blog-90cf864bf3a7) on the subject, introducing the awesome [StackEdit](https://stackedit.io/). This converts _almost_ everything, using simple copy-paste.
 
-<iframe src="https://giphy.com/embed/czubJ08i7deuKGJE9A" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>{: .align-center}
+{% include responsive-embed url="https://giphy.com/embed/czubJ08i7deuKGJE9A" ratio="16:9" %}
 
 <h6 style="text-align: center;">StackEdit is awesome.</h6>
 
@@ -162,7 +162,7 @@ And voilà, your markdown post is ready :)
 
 While this is still tedious and boring, VSCode makes it much easier than it would be otherwise.
 
-<iframe src="https://giphy.com/embed/ZwDtj146KQWFO9wAlX" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>{: .align-center}
+{% include responsive-embed url="https://giphy.com/embed/ZwDtj146KQWFO9wAlX" ratio="16:9" %}
 
 What tricks do you use? Do you already use keybindings? Let me know in the comments.
 

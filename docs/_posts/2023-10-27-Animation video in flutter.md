@@ -14,4 +14,6 @@ Because everyone is suffering from anxiety, expecially my kids, I created a brea
 
 You can see the hebrew version below. check out the code [here](https://medium.com/@dsavir-h/animation-video-in-flutter-104f68312690)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QgbwK5-Iaig?si=XZkZrBYOtTICy1Uc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% include responsive-embed url="https://www.youtube.com/embed/QgbwK5-Iaig?si=XZkZrBYOtTICy1Uc" ratio="16:9" %}
+
+
