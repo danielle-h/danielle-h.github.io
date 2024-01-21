@@ -36,7 +36,7 @@ markdown: kramdown
 excerpt_separator: <!--more-->
 
 logo: "/assets/images/dh-diamond.png"
-skin: "/assets/css/skins/light.css"
+skin: "/assets/css/skins/custom.css"
 
 read_time: true
 words_per_minute: 200
@@ -63,6 +63,8 @@ plugins:
 
 search_full_content: true
 google-site-verification: "2IV4mZQXYmms3Se9c9rvhR_bCDPBZBeTQTbW46yLdPo"
+
+google_analytics: G-XE6GY7G848
 
 # Taxonomy pages
 category_archive_path: "/categories/#"
