@@ -192,7 +192,7 @@ While this is still tedious and boring, VSCode makes it much easier than it woul
 
 What tricks do you use? Do you already use keybindings? Let me know in the comments.
 
-<hr>
+![vines-separator](/assets/images/vines-separator-smaller.png){: .align-center}
 
 [_104 unimaginable days_](https://www.facebook.com/bringhomenow/)_._ [_#BringThemHomeNow_](https://twitter.com/bringhomenow)_._
 
