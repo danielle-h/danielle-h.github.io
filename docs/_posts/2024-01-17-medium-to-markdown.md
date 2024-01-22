@@ -81,10 +81,19 @@ We defined a shortcut key (`alt + p`) that inserts a snippet when editing. The s
 
 And now our image and caption look good:
 ![Alt text](/assets/images/2024-01-17-medium-to-markdown/image-and-caption.png){: .align-center}
+<h6 style="text-align: center;">The image with the caption. This is another caption. and so on <i>ad infinitum</i>.</h6>
 
 > Tip: Create your own VSCode keybindings, with whatever style and tasks you need
 
-#### Step 3: Code blocks
+#### Step 3: Gifs
+
+If you theme supports responsive embedding, you're in luck. In my theme, responsive embedding (only for iframes, therefore only for [Giphy](https://giphy.com/) looks like this:
+```
+{ % include responsive-embed url="<url-here>" ratio="16:9" %}
+```
+Otherwise, you need to go to whatever gifs you used, and instead of copying the link (for Medium) you need to copy the embed code. 
+
+#### Step 4: Code blocks
 
 The same problem arises with code. StackEdit doesn’t wrap it in code blocks. What I want is to select all the code, and then press something that will put ` ```dart` before and ` ``` ` after.
 
@@ -105,7 +114,7 @@ Note the usage of `\n` for a new line within the snippet.
 
 And now we can easily wrap our code blocks.
 
-#### Step 4: Text separators
+#### Step 5: Text separators
 
 Medium has that nice text separator:
 
@@ -128,7 +137,24 @@ Note that also includes liquid for center alignment `{: .align-center}`. This is
 
 You can see the separator at the bottom of this post.
 
-#### Step 5: Centering
+_Edited: after feedback on this article, it is much easier to add a css separator:_
+
+_in the css file of your site, only once:_
+```css
+hr {  
+    border:0;   
+    height:50px;   
+    background:url("/assets/images/vines-separator-smaller.png") no-repeat center;    
+}
+```
+
+_And in the post:_
+```html
+<hr>
+```
+_And you’re done :)._
+
+#### Step 6: Centering
 
 If you have narrow images, you will notice that the images aren’t centered by default. So I created a snippet that only adds the liquid centering command, to add to my images:
 
@@ -143,7 +169,7 @@ If you have narrow images, you will notice that the images aren’t centered by 
 },
 ```
 
-#### Step 6: Extracts
+#### Step 7: Extracts
 
 In Jekyll, the first paragraph of each post is automatically taken as an extract on the home page. You can play with that using some HTML comment, typically `<! — more -->`. So I created another snippet for that:
 
@@ -166,7 +192,7 @@ While this is still tedious and boring, VSCode makes it much easier than it woul
 
 What tricks do you use? Do you already use keybindings? Let me know in the comments.
 
-![vines-separator](/assets/images/vines-separator-smaller.png){: .align-center}
+<hr>
 
 [_104 unimaginable days_](https://www.facebook.com/bringhomenow/)_._ [_#BringThemHomeNow_](https://twitter.com/bringhomenow)_._
 
