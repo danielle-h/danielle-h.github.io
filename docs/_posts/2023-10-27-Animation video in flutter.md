@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Breathing animation video in flutter"
+title: "Breathing animation video in Flutter"
 categories: [flutter]
 tags: [animation, breathing, mindfulness]
 comments: true
