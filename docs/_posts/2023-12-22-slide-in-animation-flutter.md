@@ -21,10 +21,14 @@ Like this :)
 
 <!--more-->
 
-![vines-separator](/assets/images/vines-separator-smaller.png){: .align-center}
+<hr>
 
 _This code was inspired by the super-cool [Best Flutter UI Templates](https://github.com/mitesh77/Best-Flutter-UI-Templates), specifically the [hotel booking template](https://github.com/mitesh77/Best-Flutter-UI-Templates/tree/master/best_flutter_ui_templates/lib/hotel_booking)._
-![vines-separator](/assets/images/vines-separator-smaller.png){: .align-center}
+
+_If you prefer to watch your tutorials, check it out here:_
+{% include responsive-embed url="https://www.youtube.com/embed/bcdVxweFhzI?si=B6-M26BrmtQ_Ng6F" ratio="16:9" %}
+
+<hr>
 
 ## Un-Animated code
 
