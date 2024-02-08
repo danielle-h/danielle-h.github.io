@@ -3,61 +3,62 @@ layout: post
 title: "How to test GPS in Flutter using Android emulator"
 categories: [Flutter]
 tags: [test, GPS, location]
-description: How to use Android emulator to test location services in Flutter 
+description: How to use Android emulator to test location services in Flutter
 comments: true
 ---
+
 In the app I’m currently developing, I need to save the users’ current location. In addition, I need to check if the user is driving.
 
 The excellent [geolocator](https://pub.dev/packages/geolocator) plugin is easy to use and has extensive documentation and examples. Creating a simple class that returns the current [location](https://pub.dev/documentation/geolocator/latest/geolocator/Position-class.html) and checks the current [speed](https://pub.dev/documentation/geolocator/latest/geolocator/Position/speed.html) is trivial.
 
 ```dart
-import 'package:geolocator/geolocator.dart';  
-import 'package:smellit/gps/location_exception.dart';  
-  
-/// A service class for managing and utilizing location-based features.  
-class LocationService {  
-  
-  // Constant for the speed limit to determine if the user is driving.  
-  static const double speedLimit = 2.5;//meter per second  
-    
-  /// Requests and checks the necessary permissions for location services.  
-  static Future<bool> requestPermissions() async {  
-    bool serviceEnabled;  
-    LocationPermission permission;  
-  
-    // Test if location services are enabled.  
-    serviceEnabled = await Geolocator.isLocationServiceEnabled();  
-    if (!serviceEnabled) {  
-       return Future.error('Location services are disabled.');  
-    }  
-  
-    permission = await Geolocator.checkPermission();  
-    if (permission == LocationPermission.denied) {  
-      permission = await Geolocator.requestPermission();  
-      if (permission == LocationPermission.denied) {  
-        return Future.error('Location permissions are denied');  
-      }  
-    }  
-  
-    if (permission == LocationPermission.deniedForever) {  
-      // Permissions are denied forever, handle appropriately.  
-      return Future.error(  
-      'Location permissions are permanently denied, we cannot request permissions.');  
-    }  
-    return true;  
-  }  
-  
-  /// Determines if the user is currently driving based on their speed.  
-  static Future<bool> isDriving() async {  
-    Position start = await getCurrentPosition();  
-    return start.speed > speedLimit;   
-  }  
-  
-  /// Gets the current position of the user after ensuring permissions are granted.  
-  static Future<Position> getCurrentPosition() async {  
-    await requestPermissions();  
-    return await Geolocator.getCurrentPosition();  
-  }  
+import 'package:geolocator/geolocator.dart';
+import 'package:smellit/gps/location_exception.dart';
+
+/// A service class for managing and utilizing location-based features.
+class LocationService {
+
+  // Constant for the speed limit to determine if the user is driving.
+  static const double speedLimit = 2.5;//meter per second
+
+  /// Requests and checks the necessary permissions for location services.
+  static Future<bool> requestPermissions() async {
+    bool serviceEnabled;
+    LocationPermission permission;
+
+    // Test if location services are enabled.
+    serviceEnabled = await Geolocator.isLocationServiceEnabled();
+    if (!serviceEnabled) {
+       return Future.error('Location services are disabled.');
+    }
+
+    permission = await Geolocator.checkPermission();
+    if (permission == LocationPermission.denied) {
+      permission = await Geolocator.requestPermission();
+      if (permission == LocationPermission.denied) {
+        return Future.error('Location permissions are denied');
+      }
+    }
+
+    if (permission == LocationPermission.deniedForever) {
+      // Permissions are denied forever, handle appropriately.
+      return Future.error(
+      'Location permissions are permanently denied, we cannot request permissions.');
+    }
+    return true;
+  }
+
+  /// Determines if the user is currently driving based on their speed.
+  static Future<bool> isDriving() async {
+    Position start = await getCurrentPosition();
+    return start.speed > speedLimit;
+  }
+
+  /// Gets the current position of the user after ensuring permissions are granted.
+  static Future<Position> getCurrentPosition() async {
+    await requestPermissions();
+    return await Geolocator.getCurrentPosition();
+  }
 }
 ```
 
@@ -65,9 +66,10 @@ But how to test it? I don’t really feel like taking a drive and checking my ph
 {% include responsive-embed url="https://giphy.com/embed/457GTXAdgEjddtturx" ratio="16:9" %}
 
 By using the Android emulator :)
+
 <!--more-->
 
-<hr>
+<hr/>
 
 #### Setting up the emulator
 
@@ -89,18 +91,22 @@ You can also decide to play it _very fast_ by changing the “Playback speed”.
 And the emulator will show the updated GPS location and speed, allowing you to easily test if the emulator is driving :)
 
 ![gif showing the location changing as it emulates driving on a route](/assets/images/2024-02-02-test-gps-flutter/gps-emulate-6.gif){: .align-center}
+
 <h6 style="text-align: center;">Emulator</h6>
 
 ![gif showing the test app during the route, detects user is driving](/assets/images/2024-02-02-test-gps-flutter/gps-emulate-7-driving.gif){: .align-center}
+
 <h6 style="text-align: center;">My app</h6>
 
 And I didn’t even need to leave the computer.
 {% include responsive-embed url="https://giphy.com/embed/1XCcD9VLQZ2Io" ratio="16:9" %}
+
 <h6 style="text-align: center;">Though leaving the computer is good sometimes.</h6>
 
 #### Troubleshooting
 
 ![white screen instead of map](/assets/images/2024-02-02-test-gps-flutter/white-screen.png){: .align-center}
+
 <h6 style="text-align: center;">Problem 1</h6>
 
 **Problem**: You open the emulator and you see a blank white screen. You can’t search for locations, nothing shows up.
@@ -113,9 +119,10 @@ And I didn’t even need to leave the computer.
 
 Enjoy the GPS.
 ![joyful girl skipping in a fantasy landscape](/assets/images/2024-02-02-test-gps-flutter/enjoy.png)
+
 <h6 style="text-align: center;">You are now this happy. (created using Dall-E)</h6>
 
-----------
+<hr/>
 
 [_118 days_](https://stories.bringthemhomenow.net/)_, I can barely believe it._ [_#BringThemHome_](https://www.facebook.com/bringhomenow/)_._
 
