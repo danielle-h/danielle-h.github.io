@@ -5,3 +5,6 @@ _site
 vendor
 
 .vscode/
+
+# python venv
+.venv/
