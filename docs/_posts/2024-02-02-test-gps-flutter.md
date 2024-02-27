@@ -10,6 +10,7 @@ comments: true
 In the app I’m currently developing, I need to save the users’ current location. In addition, I need to check if the user is driving.
 
 The excellent [geolocator](https://pub.dev/packages/geolocator) plugin is easy to use and has extensive documentation and examples. Creating a simple class that returns the current [location](https://pub.dev/documentation/geolocator/latest/geolocator/Position-class.html) and checks the current [speed](https://pub.dev/documentation/geolocator/latest/geolocator/Position/speed.html) is trivial.
+<!--more-->
 
 ```dart
 import 'package:geolocator/geolocator.dart';

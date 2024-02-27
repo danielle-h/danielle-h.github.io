@@ -11,7 +11,10 @@ I’ve been writing on [Medium](https://medium.com/@dsavir-h) for some time now,
 my articles. Some are just cool gifs from [Giphy ](https://giphy.com/)or
 [Tenor](https://tenor.com/), which Medium supports out of the box.
 
+
 <div class="tenor-gif-embed" data-postid="16527898" data-share-method="host" data-aspect-ratio="1.78771" data-width="100%"><a href="https://tenor.com/view/kermit-the-frog-typing-busy-typewriter-writing-gif-16527898">Kermit The Frog Typing GIF</a>from <a href="https://tenor.com/search/kermit+the+frog-gifs">Kermit The Frog GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+<!--more-->
 
 <h6 style="text-align: center;">Writing on Medium all the time. (<a href="https://tenor.com/view/kermit-the-
 frog-typing-busy-typewriter-writing-gif-16527898">Tenor</a>)</h6>
