@@ -6,6 +6,9 @@ tags: ["How-To", "Flutter", "Time", "Prayer", "Programming"]
 description: A prayer for the way Creating a timed read-out-loud traveler’s prayer service in Flutter
 comments: true
 ---
+*Update: Auto-tefilat harderech is live on Google play, now available also in English! download [here](https://play.google.com/store/apps/details?id=com.honeystone.tefilat_haderech&pcampaignid=web_share).*
+
+<hr>
 
 ![alt text](/assets/images/2023-12-08-a-prayer-for-the-way/traveler-prayer.png)
 <h6 style="text-align: center;">Traveler’s prayer (image credits below)</h6>
