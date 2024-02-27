@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 import sys
 import requests
 import html2text
@@ -128,7 +129,9 @@ def get_date(text:str) -> str:
 
     else:
         print("no date found")
-        return ""
+        today = datetime.now()
+        formatted_date_str = today.strftime("%Y-%m-%d")
+        return formatted_date_str
 
 ## get url and category from command line
 if len(sys.argv) < 3:
@@ -183,6 +186,7 @@ markdown_text = html_to_markdown(html_content)
 ### find date
 formatted_date_str = get_date(markdown_text)
 filename = f"{formatted_date_str}-{title_name}.md"
+foldername = f"{formatted_date_str}-{title_name}"
 
 ### cut end
 markdown_text = cut_text_at_marker('\--',markdown_text,False)
@@ -191,7 +195,7 @@ markdown_text = cut_text_at_marker('\--',markdown_text,False)
 markdown_text = cut_text_at_marker('Share',markdown_text,True)
 
 ### get tags
-pattern = r'\[\s*(\w+)\]' 
+pattern = r"\[\s*([^\]]+?)\s*\]" 
 matches = re.findall(pattern, markdown_text)
 tags = matches[-5:]  
 
@@ -233,3 +237,7 @@ for match in giphy_matches:
 ### save file
 with open(f"_posts/{filename}", 'w', encoding='utf-8') as file:
     file.write(markdown_text)
+
+### create folder for images
+os.makedirs(f"assets/images/{foldername}", exist_ok=True)
+   
