@@ -25,10 +25,10 @@ var h = window.innerHeight;
 function setup() {
   //get parameters from url if any
   let params = getURLParams();
-  if (params.fullscreen != "true") {
-    w = 400;
-    h = 400;
-  }
+  // if (params.fullscreen != "true") {
+  //   w = 400;
+  //   h = 400;
+  // }
   if (params.maxVines) {
     maxVines = params.maxVines;
   }

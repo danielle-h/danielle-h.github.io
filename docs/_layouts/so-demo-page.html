@@ -1,0 +1,25 @@
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+{% include head.html %}
+
+<body
+    class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {% if page.entries_layout == 'grid' %}page--wide{% endif %} {{ page.title | slugify }}">
+    {% include skip-links.html %}
+    {% include navigation.html %}
+    {% include masthead.html %}
+    <main class="page-content" aria-label="Content">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+        <script type="text/javascript" src="/processing/vines/vine.js"></script>
+        <script type="text/javascript" src="/processing/vines/flower.js"></script>
+        <script type="text/javascript" src="/processing/vines/leaf.js"></script>
+        <div class="wrapper" style="position:relative;overflow:hidden;">
+            <div id="sketch-holder" style="position:absolute;top:0;left:0;z-index:-1">
+                <script type="text/javascript" src="/processing/vines/growing-vines.js?fullscreen=true"></script>
+            </div>
+            {{ content }}
+        </div>
+    </main>
+    {% include footer.html %}
+    {% include scripts.html %}
+</body>
+
+</html>
