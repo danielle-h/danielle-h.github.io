@@ -20,7 +20,7 @@ let maxVines = 15;
 
 //size for fullscreen option
 var w = window.innerWidth;
-var h = window.innerHeight / 2; //for demo purposes
+var h = window.innerHeight; 
 
 function setup() {
   //get parameters from url if any
