@@ -85,6 +85,10 @@ Caveats:
 
 Enjoy!
 
+**Bonus**:
+
+If you're feeling adventurous, and you don't want to copy-paste into your console all the time, you can use [tampermonkey](https://www.tampermonkey.net/) to add the script to chat.openai.com on a regular basis.
+
 <hr>
 
 _Broken heart walking,_[ _202 days_](https://www.facebook.com/bringhomenow/)
