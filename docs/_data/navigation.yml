@@ -8,6 +8,8 @@
   url: /space-short
 - title: Int<->Array Converter
   url: /int-array-converter
+- title: Reverser
+  url: /reverser
 - title: Contact
   url: /contact/
 - title: About
