@@ -1,7 +1,5 @@
 - title: Home
   url: /
-- title: Categories
-  url: /categories/
 - title: Sketches
   url: /sketches/
 - title: Space Short
@@ -10,6 +8,8 @@
   url: /int-array-converter
 - title: Reverser
   url: /reverser
+- title: Posts
+  url: /categories/
 - title: Contact
   url: /contact/
 - title: About

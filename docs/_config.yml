@@ -35,14 +35,11 @@ markdown: kramdown
 
 excerpt_separator: <!--more-->
 
-logo: "/assets/images/dh-diamond.png"
+logo: "/assets/images/vines.jpg"
 skin: "/assets/css/skins/custom.css"
 
 read_time: true
 words_per_minute: 200
-
-paginate: 5
-paginate_path: /posts/page:num/
 
 date_format: "%Y-%m-%d"
 

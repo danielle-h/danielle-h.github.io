@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to test GPS in Flutter using Android emulator"
-categories: [Flutter]
+categories: [flutter]
 tags: [test, GPS, location]
 description: How to use Android emulator to test location services in Flutter
 comments: true
