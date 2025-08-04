@@ -3,23 +3,131 @@ permalink: /404.html
 layout: default
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0a0a1a;
+  color: white;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to bottom, rgba(10,10,26,0) 80%, rgba(10,10,26,0.8));
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+  margin: 10vh auto;
+  max-width: 600px;
+  text-align: center;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1.2em;
+}
 </style>
+
+<canvas id="rain"></canvas>
+<div class="overlay"></div>
 
 <div class="container">
   <h1>404</h1>
-
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
+  <p style="font-size: 0.9em; margin-top: 2em;">
+  Animation from <a href="https://ethereal-loop.github.io/?animation=8xlf-12" target="_blank" style="color: #aaccff;">Ethereal Loop</a> — awesome visuals paired with great music.
+</p>
+
 </div>
+
+<script>
+const canvas = document.getElementById('rain');
+const ctx = canvas.getContext('2d');
+let w = canvas.width = window.innerWidth;
+let h = canvas.height = window.innerHeight;
+
+class Raindrop {
+  constructor() {
+    this.reset(true);
+  }
+
+  reset(initial) {
+    this.x = Math.random() * w;
+    this.y = initial ? -Math.random() * h : -20;
+    this.z = Math.random() * 0.5 + 0.5;
+    this.speed = Math.random() * 3 + 4 * this.z;
+    this.len = Math.random() * 20 + 10 * this.z;
+    this.opacity = Math.random() * 0.4 + 0.2;
+    this.phase = Math.random() * Math.PI * 2;
+  }
+
+  update() {
+    this.y += this.speed;
+    this.x += Math.sin((this.y * 0.02) + this.phase) * 0.5;
+    if (this.y > h + this.len) this.reset(false);
+  }
+
+  draw() {
+    ctx.beginPath();
+    ctx.moveTo(this.x, this.y);
+    ctx.lineTo(this.x, this.y + this.len);
+    ctx.strokeStyle = `hsla(210, 80%, 80%, ${this.opacity})`;
+    ctx.lineWidth = this.z * 2;
+    ctx.stroke();
+  }
+}
+
+const layers = {
+  near: { count: 150, array: [] },
+  mid: { count: 300, array: [] },
+  far: { count: 500, array: [] }
+};
+
+Object.keys(layers).forEach(layer => {
+  for (let i = 0; i < layers[layer].count; i++) {
+    layers[layer].array.push(new Raindrop());
+  }
+});
+
+function animate() {
+  ctx.fillStyle = 'rgba(10,10,26,0.1)';
+  ctx.fillRect(0, 0, w, h);
+
+  Object.keys(layers).forEach(layer => {
+    layers[layer].array.forEach(drop => {
+      drop.update();
+      drop.draw();
+    });
+  });
+
+  requestAnimationFrame(animate);
+}
+
+window.addEventListener('resize', () => {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+});
+
+animate();
+</script>
