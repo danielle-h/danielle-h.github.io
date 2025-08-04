@@ -6,7 +6,7 @@ permalink: /reverser/
 description: multiline text reverser in flutter
 ---
 
-<iframe src="../reverser/index.html" ></iframe>
+<iframe src="../reverser/index2.html" ></iframe>
 
  <style>
         /* Default style (for desktop) */
