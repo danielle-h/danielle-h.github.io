@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.honeystone.inhalestudio",
+      "sha256_cert_fingerprints": [
+        "1F:65:CF:A7:0B:29:84:5A:D6:58:1A:92:3B:74:5F:23:88:F2:62:34:AF:DC:CE:52:97:F8:18:6F:C5:09:09:E1"
+      ]
+    }
+  }
+]
