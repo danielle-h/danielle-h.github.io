@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open in inhale studio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #0d1b2a;
+            color: #e8f4f8;
+            min-height: 100dvh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+            padding: 40px 32px;
+            max-width: 380px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            color: rgba(232, 244, 248, 0.7);
+            line-height: 1.5;
+            margin-bottom: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4fc3db;
+            color: #0d1b2a;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            margin-bottom: 12px;
+            transition: opacity 0.15s;
+        }
+
+        .btn:active {
+            opacity: 0.8;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #e8f4f8;
+            font-weight: 500;
+        }
+
+        .status {
+            font-size: 13px;
+            color: rgba(232, 244, 248, 0.5);
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="logo">🌸</div>
+        <h1>Open in inhale studio</h1>
+        <p>Someone shared a breathing preset with you. Tap the button below to import it.</p>
+        <button class="btn" id="openBtn" onclick="openApp()">Open in inhale studio</button>
+        <a id="storeBtn" class="btn btn-secondary"
+            href="https://play.google.com/store/apps/details?id=com.honeystone.inhalestudio" style="display:none">Get
+            the app on Google Play</a>
+        <p class="status" id="status"></p>
+    </div>
+
+    <script>
+        (function () {
+            var params = new URLSearchParams(window.location.search);
+            var code = params.get('code');
+            if (!code) {
+                document.getElementById('status').textContent = 'No preset code found in this link.';
+                return;
+            }
+
+            var deepLink = 'linshom://import?code=' + encodeURIComponent(code);
+
+            function openApp() {
+                document.getElementById('status').textContent = 'Opening inhale studio…';
+                window.location.href = deepLink;
+
+                // After 2.5 s, if we're still here, the app probably isn't installed
+                setTimeout(function () {
+                    if (!document.hidden) {
+                        document.getElementById('status').textContent =
+                            "inhale studio doesn't seem to be installed. Get it on Google Play:";
+                        document.getElementById('storeBtn').style.display = 'inline-block';
+                    }
+                }, 2500);
+            }
+
+            // Auto-attempt on page load
+            openApp();
+        })();
+    </script>
+</body>
+
+</html>
