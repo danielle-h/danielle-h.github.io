@@ -9,7 +9,7 @@ category: page
 
 Inhale Studio helps you create and run guided breathing sessions with your own pacing, visuals, and music.
 
-![alt text](en_01_home_presets.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rz9pzQZBTJc?si=QsnpsDmBXSR2QVpH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## What you can do
 
@@ -17,160 +17,105 @@ Inhale Studio helps you create and run guided breathing sessions with your own p
 - Edit timing, visuals, colors, and music for each video
 - Duplicate or delete videos
 - Switch the app language between English and Hebrew
-- Share the video parameters (using built in assets only)
+- Share the video parameters (in free mode using built in assets only)
 
-## Home screen
+## Getting Started
 
-The home screen shows your saved videos.
+### Create Your First Session
 
-For each video you can:
+To begin, tap the **+** button on the Home screen. This opens the **Session Settings** where you can define your video:
 
-- **Tap the card** to start the session
-- **Edit** the video
-- **Duplicate** the video
-- **Delete** the video
-- **Share** the parameters
+- **Name your session:** Give your video a title (e.g., "Morning Calm" or "Deep Sleep").
+- **Set the rhythm:** Choose your durations for **Inhale**, **Exhale**, and optional **Hold** phases.
+- **Pick a style:** Choose between **Flower/Candle** cues ("Smell the flower") or **Neutral** cues ("Inhale").
+- **Save:** Tap **Save and Start** to store your settings and begin breathing.
 
-Use the **+** button to create a new video.
+### Running a Session
 
-<!-- SCREENSHOT: Home screen actions / menu -->
+Once you have created a session, it will appear as a card on your Home screen.
 
-## Menu
+1.  **Start:** Tap any session card to begin.
+2.  **Intro:** The app will display a brief intro message to help you prepare.
+3.  **Breathe:** Follow the on-screen animation and countdown timer. The progress bar at the bottom shows how much of the session is remaining.
+4.  **Stop:** If you need to end early, simply use your device's **Back** button to return to the Home screen.
 
-From the menu, you can open:
+![alt text](/inhale-studio/session information.png)
 
-- **Language** — switch between English and Hebrew
-- **About** — app info, contact, support, and licenses
-- **Credits** — music and image creator credits
+**Note:** If the app doesn't start after you hit save, look for red error messages; the screen will automatically scroll to any invalid fields.
 
-## Session settings
+## Customizing Your Experience
 
-Each video can be customized by pressing the **Edit** button.
+One of the best parts of Inhale Studio is making each session feel like your own. You can adjust the rhythm, visuals, and sound to match your goals.
 
-### Session
+### Adjusting the Rhythm
 
-- **Session name**
+You have full control over the timing of your breathing cycles:
 
-### Breathing timing
+- **Inhale & Exhale:** Set the duration for breathing in and out, up to 120 seconds each.
+- **Hold Phases:** Add a "Hold after inhale" or "Hold after exhale" for advanced techniques like Box Breathing.
+- **Cycles:** Choose how many times to repeat the pattern, up to a maximum of 60 cycles.
+- **Intro:** Set a preparation duration to get settled before the first inhale.
 
-- **Intro** duration
-- **Inhale** duration
-- **Hold after inhale** duration
-- **Exhale** duration
-- **Hold after exhale** duration
-- **Number of cycles**
+### Personalizing Visuals
 
-Current limits:
+You can change how the app looks during your session to create the right atmosphere:
 
-- Inhale, exhale, and hold durations: up to **120 seconds**
-- Cycles: up to **60**
+- **Backgrounds:** Choose a colorful gradient pair, a professional image from the built-in library, or upload your own photo from your device.
+- **Display Modes:** Use **Fit** to keep the original photo shape or **Stretch** to fill the entire screen.
+- **Breathing Icons:** Select separate images for the inhale and exhale phases. You can use the built-in library or upload your own **PNG** or **GIF** files for a custom animation.
 
-If a value is invalid, the page shows an error and scrolls to the relevant field when you press **Save and Start**.
-![alt text](en_02_session_settings.png)
+### Personalizing Music
 
-### Breathing cue style
+Adding sound can help you maintain focus and relax:
 
-Choose how the breathing instructions are shown:
+- **Library Tracks:** Choose from a selection of built-in ambient tracks.
+- **Upload Your Own:** Use your own audio files. The app supports **MP3, WAV, M4A, AAC,** and **OGG** formats.
+- **Volume Control:** Fine-tune the background music volume so it complements rather than distracts from your practice.
 
-- **Flower/Candle**: will show "smell the flower"/"blow out the candle"
-- **Neutral**: Whill show "Inhale" and "Exhale"
+### Choosing Your Cue Style
 
-### Background
+- **Flower/Candle:** prompts you to "smell the flower" and "blow out the candle".
+- **Neutral:** only "Inhale" and "Exhale" text.
 
-You can use:
+## Managing Your Library
 
-- A gradient background color pair
-- A background image from the built-in library
-- Your own uploaded background image
+As you create more sessions for different needs you can easily manage them from the home screen. Free users are limited to 7 videos.
 
-Background images can be displayed in:
+### Editing & Refining
 
-- **Fit** mode - preserve original aspect ratio, centered
-- **Stretch** mode - stretches to fill the background
+To make changes to a session you've already created:
 
-<!-- SCREENSHOT: Session settings - background section -->
+- **Locate the session:** Find the session card on the home screen.
+- **Open settings:** Press the **Edit** button on that card.
+- **Update and Save:** Adjust your timings, visuals, or music, then tap **Save** to update your practice without starting the session.
 
-### Breathing visuals
+### Organizing Your Sessions
 
-You can choose separate inhale and exhale images.
+- **Duplicate:** If you want to create a variation of a session (for example, the same visuals but a longer duration), use the **Duplicate** button to copy the parameters.
+- **Delete:** To remove a session you no longer use, tap the **Delete** button on the card.
+- **Share:** You can share your specific video parameters with others, provided you are using the built-in assets. Custom assets will be replaced with default built in assets. For sharing custom images **upgrade to Pro**.
 
-Options include:
+## Pro mode
 
-- Built-in image library
-- Your own uploaded PNG or GIF files
+In pro mode, you can create unlimited videos. In addition, you can share videos with your own custom assets, as well as access pro-only assets and asset packs.
 
-### Music
+## App Settings & Info
 
-You can add optional background music using:
+### Language and Localization
 
-- The built-in music library
-- Your own audio file
+Inhale Studio is designed to be accessible in multiple languages:
 
-Supported uploaded formats:
+- **Switching Languages:** Open the **Menu** and select **Language** to switch instantly between **English** and **Hebrew**.
 
-- MP3
-- WAV
-- M4A
-- AAC
-- OGG
+### Credits and Support
 
-You can also adjust the playback volume.
+- **About:** Access the **About** page from the menu to find the current app version, image credits (including Pixabay creator pages), contact links, and open-source licenses.
 
-<!-- SCREENSHOT: Session settings - visuals and music -->
+### Troubleshooting & Tips
 
-## Running a session
+- **Save Errors:** If a session won't save, the app will highlight the error and scroll to the field that needs fixing (e.g., a duration over 120 seconds).
+- **Missing Media:** If an image or music file doesn't load, double-check that the file format is supported (like MP3 or PNG) or that the file hasn't been moved on your device.
 
-When a session starts, the app shows:
+## Questions? Comments? Suggestions?
 
-- An intro message
-- The breathing animation
-- Cue text for inhale, exhale, and hold
-- A countdown timer
-- A progress bar for session progress
-
-You can stop the session at any time using the back button.
-
-![alt text](en_03_animation_active.png)
-## Language switching
-
-The app supports:
-
-- **English**
-- **Hebrew**
-
-Use the **Language** option in the menu to switch instantly. Your choice is remembered for the next time you open the app.
-
-## About and Credits
-
-### About
-
-The About page includes:
-
-- App version
-- Contact link
-- Support link
-- Open-source license information
-
-### Credits
-
-The Credits page lists included music and image creators. Where available, each creator has a link to their Pixabay creator page.
-
-<!-- SCREENSHOT: Credits page -->
-
-## Tips
-
-- Create a few videos for different situations, such as calming down, focusing, or bedtime.
-- Use shorter sessions for children or quick reset breaks.
-- Use neutral cues if you prefer simpler breathing language.
-- Add your own images and music to create a more personal experience.
-
-## Troubleshooting
-
-- If **Save and Start** does not continue, check the highlighted field and scroll target for validation errors.
-- If an image preview is unavailable, the file may be missing or unsupported.
-- If music does not load, confirm the file format is supported.
-- If a creator link does not open, try again later or open it in a browser manually.
-
-## Need more help?
-
-[Contact me](/contact).
+[Contact me](/contact)
