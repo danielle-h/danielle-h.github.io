@@ -5,8 +5,6 @@ permalink: /inhale-studio-help/
 category: page
 ---
 
-# Inhale Studio Help
-
 Inhale Studio helps you create and run guided breathing sessions with your own pacing, visuals, and music.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rz9pzQZBTJc?si=QsnpsDmBXSR2QVpH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -93,23 +91,32 @@ To make changes to a session you've already created:
 
 - **Duplicate:** If you want to create a variation of a session (for example, the same visuals but a longer duration), use the **Duplicate** button to copy the parameters.
 - **Delete:** To remove a session you no longer use, tap the **Delete** button on the card.
-- **Share:** You can share your specific video parameters with others, provided you are using the built-in assets. Custom assets will be replaced with default built in assets. For sharing custom images **upgrade to Pro**.
+- **Share:** You can share your specific video parameters with others, provided you are using the built-in assets. Custom assets will be replaced with default built in assets. For sharing custom images **upgrade to Pro**. To Share, press the Share button. A preview of the **sharing card** will be shown. The card has _your_ background and images. When pressing share, you can send this card via email or WhatsApp with an import link. The card also has a QR code with the same import link. **Click the link or scan the QR code** to import.
 
 ## Pro mode
 
-In pro mode, you can create unlimited videos. In addition, you can share videos with your own custom assets, as well as access pro-only assets and asset packs.
+In pro mode, you can create unlimited videos. In addition, you can share videos with your own custom assets, as well as access pro-only assets and asset packs. Coming soon.
 
 ## App Settings & Info
+
+### Privacy Policy
+
+Inhale Studio does not collect any personal health metrics and only uses anonymous technical data (via Sentry and Mixpanel) to improve the animation engine.
+
+View the full privacy policy [here](https://danielle-honig.com/inhale-studio-privacy/).
 
 ### Language and Localization
 
 Inhale Studio is designed to be accessible in multiple languages:
 
-- **Switching Languages:** Open the **Menu** and select **Language** to switch instantly between **English** and **Hebrew**.
+- English
+- Hebrew
+
+Open the **Menu** and select **Language** to switch between **English** and **Hebrew**.
 
 ### Credits and Support
 
-- **About:** Access the **About** page from the menu to find the current app version, image credits (including Pixabay creator pages), contact links, and open-source licenses.
+- **About:** Access the **About** page from the menu to find the current app version, image credits (including Pixabay creator pages), contact links, and licenses.
 
 ### Troubleshooting & Tips
 
