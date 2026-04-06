@@ -91,11 +91,11 @@ To make changes to a session you've already created:
 
 - **Duplicate:** If you want to create a variation of a session (for example, the same visuals but a longer duration), use the **Duplicate** button to copy the parameters.
 - **Delete:** To remove a session you no longer use, tap the **Delete** button on the card.
-- **Share:** You can share your specific video parameters with others, provided you are using the built-in assets. Custom assets will be replaced with default built in assets. For sharing custom images **upgrade to Pro**. To Share, press the Share button. A preview of the **sharing card** will be shown. The card has _your_ background and images. When pressing share, you can send this card via email or WhatsApp with an import link. The card also has a QR code with the same import link. **Click the link or scan the QR code** to import.
+- **Share:** You can share your specific video parameters with others, provided you are using the built-in assets. Custom assets will be replaced with default built in assets. To Share, press the Share button. A preview of the **sharing card** will be shown. The card has _your_ background and images. When pressing share, you can send this card via email or WhatsApp with an import link. The card also has a QR code with the same import link. **Click the link or scan the QR code** to import.
 
 ## Pro mode
 
-In pro mode, you can create unlimited videos. In addition, you can share videos with your own custom assets, as well as access pro-only assets and asset packs. Coming soon.
+In pro mode, you can create unlimited videos. In addition, you can access pro-only assets and asset packs. Coming soon.
 
 ## App Settings & Info
 
